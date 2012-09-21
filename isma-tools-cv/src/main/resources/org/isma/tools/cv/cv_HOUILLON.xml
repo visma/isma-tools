@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="cv.xsd" cvweight="heavy">
+  <candidat prenom="Wilfried" nom="HOUILLON" age="32" statutMarital="" nationalite="Française">
+    <contact mail="wilfried.houillon@gmail.com" tel="06 60 95 92 22"/>
+    <adresse rue="9 rue Ferrus" cp="75014" ville="Paris"/>
+    <profil titre="Concepteur Developpeur .NET" description="">
+      <competences>
+        <competence intitule="Langages">
+          <detail>C# .NET</detail>
+          <detail>Java</detail>
+          <detail>PHP</detail>
+          <detail>ASP</detail>
+          <detail>SQL</detail>
+          <detail>HTML</detail>
+        </competence>
+      </competences>
+    </profil>
+  </candidat>
+  <formations>
+    <formation nom="Formation Concepteur Développeur Informatique Bac +4" annee="2012"/>
+    <formation nom="Bac + 2 concepteur/réalisateur multimédia" annee="2003"/>
+    <formation nom="Baccalauréat STT action commerciale" annee="1999"/>
+  </formations>
+  <experiences>
+    <pageExperience>
+      <experience>
+        <client nom="SELARL Estrade, Azad, Harutyunyan" fonction="Cabinet d'avocats"  />
+        <mission effectifs="1" type="Stage" dateFin="Juin 2012" dateDebut="Mai 2012" duree="2 mois" poste="concepteur/développeur .NET"/>
+        <projets>
+          <projet nom="EAH">
+            <texte>
+              <![CDATA[
+                        <p>Développement d'une application d'aide à la gestion d'un cabinet d'avocat</p>
+                        <ul class="projectlist">
+                            <li>Gestion electronique des documents, Indexaton, Archivage par dossier juridique</li>
+                            <li>Génération de documents (lettres, mails...)</li>
+							<li>Gestion des clients</li>
+							<li>Aide à la facturation au forfait et à l'acte</li>
+							<li>Administration des habilitations utilisateurs</li>
+							<li>Annuaire des confrères et des juridictions</li>
+                        </ul>
+                        ]]>
+            </texte>
+          </projet>
+        </projets>
+        <intervention>
+          <texte>
+            <![CDATA[
+                        <ul class="interventionList">
+                            <li>Analyse des besoins, Modélisation Merise et UML</li>
+                            <li>Conception graphique</li>
+                            <li>Implémentation de l'architecture MVVM</li>
+							<li>Développement, Intégration, Déploiement</li>
+							<li>Formation des utilisateurs</li>
+                        </ul>
+                        ]]>
+          </texte>
+        </intervention>
+        <environnement>
+          <liste>
+            <element>WPF</element>
+            <element>Architecture MVVM</element>
+            <element>C#</element>
+            <element>Entity Framework 4</element>
+            <element>Linq</element>
+            <element>SQL Server 2008</element>
+          </liste>
+        </environnement>
+      </experience>
+      <experience>
+        <client nom="Ohler" fonction="Semi-grossite, vente de consommables photo/vidéo"  />
+        <mission dateFin="Juillet 2007" dateDebut="Juillet 2008" duree="1 an" poste="Gérant" type="Création d'entreprise" effectifs="1" />
+        <projets>
+          <projet>
+            <texte>
+              <![CDATA[
+                        <p>Création d'un Front end/Back end Web (PHP,MySQL, AJAX) aux fonction suivantes:</p>
+                        <ul class="interventionList">
+                            <li>Gestion des stocks</li>
+                            <li>Gestion des commandes</li>
+                            <li>Annuaire des clients</li>
+                            <li>Génération des factures</li>
+                        </ul>
+                        <p>Gestion comptabe, achats, facturation</p>
+                        ]]>
+            </texte>
+          </projet>
+        </projets>
+      </experience>
+      <experience>
+        <client nom="Sodira" fonction="Semi-grossite en vente de consommables et matériels photo/vidéo" />
+        <mission dateDebut="Février 2006" dateFin="Juillet 2007" duree="18 mois" poste="Webmaster/Commercial" type="Interne" effectifs="6" />
+        <projets>
+          <projet>
+            <texte>
+              <![CDATA[
+                        <ul class="interventionList">
+                            <li>Maintenance corrective (PHP/MySQL)</li>
+                            <li>Conception et développement des fonctions d'emailng</li>
+                            <li>Refonte de l'ergonomie du back-office</li>
+                            <li>Mise en place des promotions / Crétaion des bannières publicitaires</li>
+                        </ul>
+                        ]]>
+            </texte>
+          </projet>
+        </projets>
+      </experience>
+      <experience>
+        <client nom="France Telecom" fonction="Opérateur téléphonique" />
+        <mission dateDebut="Août 2001" dateFin="Septembre 2003" duree="2 ans" poste="Webmaster" type="Contrat de qualification" effectifs="6" />
+        <projets>
+          <projet>
+            <texte>
+              <![CDATA[
+                        <ul class="interventionList">
+                            <li>Mise à jour du site francetelecom.com</li>
+                            <li>Mintenance et développement de pages HTML</li>
+                            <li>Rédaction de la partie Rechecrhe & Développement</li>
+                            <li>Retouches d'images sous Photoshop</li>
+                        </ul>
+                        ]]>
+            </texte>
+          </projet>
+        </projets>
+      </experience>
+    </pageExperience>
+  </experiences>
+  <langues>
+    <langue nom="Anglais" niveau="Lu, écrit, parlé"/>
+  </langues>
+</cv>

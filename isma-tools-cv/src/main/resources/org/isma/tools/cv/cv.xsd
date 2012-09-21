@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- ==================== ROOT ELEMENT ==================== -->
+    <xs:element name="cv">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="cv-type">
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- ==================== 2nd LEVEL ELEMENTS ==================== -->
+    <xs:element name="candidat">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="contact" maxOccurs="1"/>
+                <xs:element ref="adresse" maxOccurs="1"/>
+                <xs:element ref="profil" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="prenom" type="xs:string" use="required"/>
+            <xs:attribute name="nom" type="xs:string" use="required"/>
+            <xs:attribute name="age" type="xs:integer" use="required"/>
+            <xs:attribute name="statutMarital" type="xs:string" use="required"/>
+            <xs:attribute name="nationalite" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="formations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="formation" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="experiences">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pageExperience" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="langues">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="langue" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!--<xs:element name="competences">-->
+    <!--<xs:complexType>-->
+    <!--<xs:sequence>-->
+    <!--<xs:element ref="domaine" maxOccurs="unbounded"/>-->
+    <!--</xs:sequence>-->
+    <!--</xs:complexType>-->
+    <!--</xs:element>-->
+    <!-- ==================== 3nd LEVEL ELEMENTS ==================== -->
+    <xs:element name="pageExperience">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="experience" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="contact">
+        <xs:complexType>
+            <xs:attribute name="mail" type="xs:string" use="required"/>
+            <xs:attribute name="tel" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="adresse">
+        <xs:complexType>
+            <xs:attribute name="rue" type="xs:string" use="required"/>
+            <xs:attribute name="cp" type="xs:integer" use="required"/>
+            <xs:attribute name="ville" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="profil">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="competences"/>
+            </xs:sequence>
+            <xs:attribute name="titre" type="xs:string" use="required"/>
+            <xs:attribute name="description" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="formation">
+        <xs:complexType>
+            <xs:attribute name="nom" type="xs:string" use="required"/>
+            <xs:attribute name="annee" type="xs:integer" use="required"/>
+            <xs:attribute name="specialisation" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="langue">
+        <xs:complexType>
+            <xs:attribute name="nom" type="xs:string" use="required"/>
+            <xs:attribute name="niveau" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ==================== 4th LEVEL ELEMENTS ==================== -->
+    <xs:element name="experience">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="client"/>
+                <xs:element ref="mission"/>
+                <xs:element ref="projets"/>
+                <xs:element ref="intervention" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="environnement" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="competences">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="competence" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ==================== 5th LEVEL ELEMENTS ==================== -->
+    <xs:element name="client">
+        <xs:complexType>
+            <xs:attribute name="nom" type="xs:string" use="required"/>
+            <xs:attribute name="fonction" type="xs:string" use="required"/>
+            <xs:attribute name="equipe" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mission">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="texte" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="poste" type="xs:string" use="required"/>
+            <xs:attribute name="duree" type="xs:string" use="required"/>
+            <xs:attribute name="dateDebut" type="xs:string" use="required"/>
+            <xs:attribute name="dateFin" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="typeMission" use="required"/>
+            <xs:attribute name="effectifs" type="xs:string" use="required"/>
+
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="projets">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="projet" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="intervention">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="texte"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="environnement">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element ref="texte"/>
+                <xs:element ref="liste"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>    <xs:element name="competence">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="detail" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="intitule" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ==================== 6th LEVEL ELEMENTS ==================== -->
+    <xs:element name="projet">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="texte"/>
+            </xs:sequence>
+            <xs:attribute name="nom" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ==================== COMMON ELEMENT ==================== -->
+    <xs:element name="texte"/>
+    <xs:element name="element"/>
+    <xs:element name="liste">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="element"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="cvweight">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="light"/>
+            <xs:enumeration value="heavy"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="typeMission">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Stage"/>
+            <xs:enumeration value="Régie"/>
+            <xs:enumeration value="Forfait"/>
+            <xs:enumeration value="Interne" />
+            <xs:enumeration value="Contrat de qualification" />
+            <xs:enumeration value="Création d'entreprise" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="cv-type">
+        <xs:sequence>
+            <xs:element ref="candidat"/>
+            <xs:element ref="formations"/>
+            <xs:element ref="experiences"/>
+            <xs:element ref="langues"/>
+            <!--<xs:element ref="competences"/>-->
+        </xs:sequence>
+        <xs:attribute name="cvweight" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="light"/>
+                    <xs:enumeration value="heavy"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>

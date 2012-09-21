@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="cv.xsd" cvweight="heavy">
+    <candidat prenom="Ismaël" nom="MAMECHE" age="31" statutMarital="Célibataire" nationalite="française">
+        <contact mail="ismael.mameche@gmail.com" tel="06 76 40 15 17"/>
+        <adresse rue="14 avenue joffre" cp="94160" ville="Saint mandé"/>
+        <profil titre="Développeur Java senior"
+                description="8 ans d'expérience, agiliste, spécialiste du monde java">
+            <competences>
+                <competence intitule="Maîtrise du langage Java, du framework JEE, de son API et de ses outils">
+                    <detail>Eclipse</detail>
+                    <detail>Intellij</detail>
+                    <detail>Tomcat</detail>
+                    <detail>Websphere</detail>
+                    <detail>Yourkit</detail>
+                </competence>
+                <competence intitule="Expérimenté sur de nombreux frameworks, librairies et design patterns">
+                    <detail>Swing</detail>
+                    <detail>JEE</detail>
+                    <detail>Spring</detail>
+                    <detail>Struts</detail>
+                    <detail>Hibernate</detail>
+                    <detail>XFire</detail>
+                    <detail>Apache Commons</detail>
+                    <detail>Pico</detail>
+                    <detail>Mockito</detail>
+                    <detail>Log4j</detail>
+                    <detail>JUnit</detail>
+                </competence>
+                <competence intitule="Expérimenté dans l'utilisation d'une forge logicielle">
+                    <detail>Intégration continue (Bamboo, Hudson)</detail>
+                    <detail>Maven</detail>
+                    <detail>Test coverage (Cobertura)</detail>
+                </competence>
+                <competence intitule="Bonne connaissances en développement web">
+                    <detail>XHTML</detail>
+                    <detail>JavaScript</detail>
+                    <detail>CSS</detail>
+                    <detail>XML</detail>
+                    <detail>XSD</detail>
+                    <detail>JQuery</detail>
+                    <detail>Backbone.</detail>
+                    <detail>Websockets</detail>
+                </competence>
+                <competence intitule="Expérimenté en bases de données relationnelles">
+                    <detail>MySQL</detail>
+                    <detail>Oracle</detail>
+                    <detail>SQL Server</detail>
+                    <detail>Sybase</detail>
+                    <detail>Transact-SQL</detail>
+                </competence>
+                <competence intitule="Expérimenté dans les bonnes pratiques issues des méthodologies agiles">
+                    <detail>Test Driven Developpement</detail>
+                    <detail>
+                        <![CDATA[
+                        eXtreme Programming (Itérations courtes, intégration continue, travail en binôme, plannification et estimation de charge des tâches)
+                        ]]>
+                    </detail>
+                </competence>
+            </competences>
+        </profil>
+    </candidat>
+    <formations>
+        <formation nom="Baccalauréat S" annee="1998"/>
+        <formation nom="Diplôme d'ingénieur EPITA" annee="2004"
+                   specialisation="Spécialisation systèmes d'information et génie logiciel"/>
+    </formations>
+    <experiences>
+        <pageExperience>
+            <!-- ALLIANZ -->
+            <experience>
+                <client nom="Allianz Global Investors" fonction="Asset Manager" equipe="Front Office"/>
+                <mission poste="Ingénieur étude et développement" duree="3.5 ans" dateDebut="Juin 2008"
+                         dateFin="Février 2012" type="Régie" effectifs="10~15">
+                    <texte>
+                        <![CDATA[
+                    L'équipe IT Front / IT Risk d'AGI assure l'évolution et la maintenance des applications front office.
+                    Ces applications sont construites à partir d'un datawarehouse alimenté par les bases de données des progiciels DECALOG et TRADIX.
+                    ]]>
+                    </texte>
+                </mission>
+                <projets>
+                    <projet nom="GPTaux">
+                        <texte>
+                            <![CDATA[
+                        <p>L'application GPTaux couvre :</p>
+                        <ul class="projectlist">
+                            <li>la gestion de portefeuilles de taux à partir des instruments et positions de DECALOG</li>
+                            <li>la gestion de portefeuilles monétaires à partir des instruments et positions de TRADIX</li>
+                            <li>le référentiel des instruments dérivés dont le pricing est effectué par REECH</li>
+                        </ul>
+                        ]]>
+                        </texte>
+                    </projet>
+                    <projet nom="Oscar">
+                        <texte>Application d'administration des données du Datawarehouse</texte>
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        <p>Mes interventions en maîtrise d'oeuvre couvrent :</p>
+                        <ul class="interventionList">
+                            <li>conception/développement JAVA (2 ou 3 tiers), architecture client de type MVC</li>
+                            <li>l'écriture du mapping objet/relationnel en XML</li>
+                            <li>l'écriture des requêtes et procédures stoquées SQL</li>
+                        </ul>
+                        <p>Mes interventions en assistance à maîtrise d'ouvrage couvrent :</p>
+                        <ul class="interventionList">
+                            <li>la définition et l'écriture des données fournies en entrée aux tests automatisés</li>
+                            <li>la définition et l'écriture des étalons de tests (résultats attendus)</li>
+                            <li>l'estimation de la charge de travail des différentes tâches</li>
+                        </ul>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Méthodologie XP</element>
+                        <element>Test Driven Developpement</element>
+                        <element>Binômage (Pair programming)</element>
+                        <element>Tests fonctionnels automatisés</element>
+                        <element>Intégration continue</element>
+                        <element>Java</element>
+                        <element>Confluence</element>
+                        <element>Intellij</element>
+                        <element>JUnit</element>
+                        <element>Swing/AWT</element>
+                        <element>PicoContainer</element>
+                        <element>Mockito</element>
+                        <element>JFreeChart</element>
+                        <element>Framework codjo</element>
+                        <element>Sybase</element>
+                        <element>SVN</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- GENERALI -->
+            <experience>
+                <client nom="Generali" fonction="Assureur"/>
+                <mission poste="Ingénieur étude et développement" duree="1 an" dateDebut="Mai 2007" dateFin="Mai 2008"
+                         type="Régie" effectifs="5"/>
+                <projets>
+                    <projet nom="Vidage">
+                        <texte>
+                            <![CDATA[
+                        Vidage est une application web à destination des agences Generali et du siège.
+                        Elle permet de gérer les souscriptions de produits de prévoyance et santé en ligne.
+                        ]]>
+                        </texte>
+                    </projet>
+                    <projet nom="Novita">
+                        <texte>
+                            <![CDATA[
+                        Novita est une application web à destination des agences Generali et du siège.
+                        Elle permet de gérer la souscription des produits d'assurance vie en ligne.
+                        Intervention dans le cadre d'une évolution de Novita pour la mise en place des avenants sur contrat et de la tarification des clients VIP.
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        <p>Réalisation d'écrans, de batches, de services web</p>
+                        <ul class="interventionList">
+                            <li>Conception/Développement</li>
+                            <li>Tests unitaires (TDD)</li>
+                        </ul>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Test Driven Developpement</element>
+                        <element>Java</element>
+                        <element>Oracle</element>
+                        <element>Struts</element>
+                        <element>Hibernate 3</element>
+                        <element>Spring 2</element>
+                        <element>JUnit</element>
+                        <element>Webservices Xfire</element>
+                        <element>Maven 2</element>
+                        <element>Websphere</element>
+                        <element>JBoss</element>
+                        <element>RAD (Eclipse)</element>
+                        <element>SVN</element>
+                        <element>Jira</element>
+                        <element>Bamboo</element>
+                        <element>Toad</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- ORANGE BUSINESS SERVICE -->
+        </pageExperience>
+        <pageExperience>
+            <experience>
+                <client nom="Orange business service" fonction="Telecoms"/>
+                <mission poste="Ingénieur étude et développement" duree="2 ans" dateDebut="Février 2005"
+                         dateFin="Avril 2007" type="Forfait" effectifs="10"/>
+                <projets>
+                    <projet nom="Chronos">
+                        <texte>
+                            <![CDATA[
+                        L'application CHRONOS permet la gestion des catalogues de services applicatifs, le provisionning de plateformes applicatives et est le référentiel de production des produits.
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        <p>Maintenance applicative, développement de nouvelles fonctionnalités, support.</p>
+                        <ul class="interventionList">
+                            <li>Etude des demandes d'évolutions et chiffrage</li>
+                            <li>Documentations (spécifications fonctionnelles/détaillées, cahiers de tests...)</li>
+                            <li>Développement (évolutions fonctionnelles, reprises, anomalies)</li>
+                            <li>Tests fonctionnels</li>
+                            <li>Support</li>
+                        </ul>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Linux (Debian)</element>
+                        <element>Microsoft SQL Server 2000</element>
+                        <element>Perl/CGI</element>
+                        <element>Apache</element>
+                        <element>Shell</element>
+                        <element>Html/Javascript</element>
+                        <element>Eclipse</element>
+                        <element>CVS</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- GAZ DE FRANCE -->
+            <experience>
+                <client nom="Gaz de France" fonction="Producteur d'énergie"/>
+                <mission poste="Ingénieur étude et développement" duree="1 mois" dateDebut="Janvier 2005"
+                         dateFin="Février 2005" type="Régie" effectifs="1"/>
+                <projets>
+                    <projet nom="CMS">
+                        <texte>
+                            <![CDATA[
+                        L'ensemble des sites internet de Gaz de France sont bâtis sur une application interne de type CMS (gestion de contenu).
+                        ]]>
+                        </texte>
+
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        <p>Evolutions fonctionnelles sur le CMS et création de la structure destinée à accueillir du nouveau contenu.</p>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Php/MySql</element>
+                        <element>Html/Css/Javascript</element>
+                        <element>Firebug</element>
+                        <element>UltraEdit</element>
+                        <element>WinScp</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- FRANCE TELECOM R&D -->
+            <experience>
+                <client nom="France Telecom R&amp;D" fonction="Telecoms"/>
+                <mission poste="Ingénieur étude et développement" duree="6 mois" dateDebut="Août 2004"
+                         dateFin="Janvier 2005" type="Forfait" effectifs="4"/>
+                <projets>
+                    <projet nom="Eqos et Venturi">
+                        <texte>
+                            <![CDATA[
+                        Projets Venturi (application de workflow) et Eqos (application de saisie des tests sur téléphonie)
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        <ul class="interventionList">
+                            <li>Documentation (spécifications techniques, cahiers de tests)</li>
+                            <li>Tests unitaires</li>
+                            <li>Développement</li>
+                        </ul>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Eclipse</element>
+                        <element>Oracle</element>
+                        <element>Tomcat</element>
+                        <element>Struts</element>
+                        <element>CVS</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- STAGE DEVOTEAM -->
+            <experience>
+                <client nom="Devoteam" fonction="SSII" equipe="DSI"/>
+                <mission poste="Stagiaire" duree="6 mois" dateDebut="Janvier 2004" dateFin="Juin 2004" type="Stage"
+                         effectifs="1"/>
+                <projets>
+                    <projet>
+                        <texte>
+                            <![CDATA[
+                        Evolutions sur les applications internes de suivi des consultants et de suivi des formations :
+                        <ul class="projectlist">
+                            <li>Spécifications</li>
+                            <li>Conception/Développement</li>
+                        </ul>
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+                <environnement>
+                    <liste>
+                        <element>Java</element>
+                        <element>Struts</element>
+                        <element>WSAD (Eclipse)</element>
+                        <element>Oracle</element>
+                    </liste>
+                </environnement>
+            </experience>
+            <!-- STAGE IXOFF -->
+            <experience>
+                <client nom="Ixoff" fonction="Spécialiste en contrôle d'accès"/>
+                <mission poste="Stagiaire" duree="3 mois" dateDebut="Mai 2002" dateFin="Juillet 2002" type="Stage"
+                         effectifs="3"/>
+                <projets>
+                    <projet nom="IBox">
+                        <texte>
+                            <![CDATA[
+                        Développement d'une application web de gestion d'un parc de lecteurs de badges en Php/MySql
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+            </experience>
+        </pageExperience>
+    </experiences>
+    <langues>
+        <langue nom="Anglais" niveau="lu, parlé, écrit"/>
+    </langues>
+</cv>
