@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <!--
+     | POM Relationships
+	-->
+    <groupId>org.isma.tools</groupId>
+    <artifactId>isma-tools-jars</artifactId>
+    <version>0.1</version>
+    <parent>
+        <groupId>org.isma.tools</groupId>
+        <artifactId>isma-tools</artifactId>
+        <version>0.1</version>
+    </parent>
+    <!--
+    | Project Information
+    -->
+    <name>module tools jars</name>
+    <description>utilitaire pour scanners des jars</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+    </dependencies>
+    <!--
+    | Build Settings
+    -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

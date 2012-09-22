@@ -1,4 +1,4 @@
-package org.isma.utils.io;
+package org.isma.tools.utils.io;
 
 import java.io.*;
 

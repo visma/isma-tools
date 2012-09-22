@@ -35,6 +35,11 @@
                 <artifactId>isma-tools-cv</artifactId>
                 <version>${project.version}</version>
             </dependency>
+			<dependency>
+                <groupId>org.isma.tools</groupId>
+                <artifactId>isma-tools-jars</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>
@@ -47,6 +52,7 @@
     <modules>
         <module>isma-tools-cv</module>
         <module>isma-tools-subtitles</module>
+		<module>isma-tools-jars</module>
     </modules>
     <!--
     | Build Settings
