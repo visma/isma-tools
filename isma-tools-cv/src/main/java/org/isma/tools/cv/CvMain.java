@@ -19,8 +19,8 @@ public class CvMain {
         CvMain main = new CvMain();
         Template template00 = new Template("/test_00/", "cv00.jsp");
 
-//        File cv = main.generate("cv_MAMECHE.xml", template00);
-        File cv = main.generate("cv_HOUILLON.xml", template00);
+        File cv = main.generate("cv_MAMECHE.xml", template00);
+//        File cv = main.generate("cv_HOUILLON.xml", template00);
         Desktop.getDesktop().open(cv.getParentFile());
     }
 }

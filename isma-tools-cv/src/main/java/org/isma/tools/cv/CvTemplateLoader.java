@@ -8,7 +8,7 @@ import java.io.File;
 
 public class CvTemplateLoader {
     public static final String PROJECT_DIR = System.getProperty("user.dir");
-    public static final String MODULE_DIR = "";//"isma-tools";
+    public static final String MODULE_DIR = "isma-tools-cv";
     public static final String TARGET_CLASSES_DIR = String.format("%s/%s/target/classes/", PROJECT_DIR, MODULE_DIR);
     private static final String TEMPLATE_RESOURCE_DIR = "/templates/";
     private static final String ORG_APACHE_JSP_PACKAGE = "org.apache.jsp";
