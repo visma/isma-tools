@@ -4,8 +4,8 @@ import java.io.*;
 
 import static org.apache.commons.io.FileUtils.forceDelete;
 
-public class FileUtils {
-    private FileUtils() {
+public class FileHelper {
+    private FileHelper() {
     }
 
 
@@ -23,7 +23,7 @@ public class FileUtils {
 
 
     public static void writeToFile(String fileName, InputStream iStream)
-          throws IOException {
+            throws IOException {
         File file = new File(fileName);
 
         if (file.exists()) {
@@ -44,30 +44,29 @@ public class FileUtils {
             while ((bytesRead = iStream.read(buffer)) != -1) {
                 fOut.write(buffer, 0, bytesRead);
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new IOException("failed, got: " + e.toString());
-        }
-        finally {
+        } finally {
             close(iStream, fOut);
         }
     }
 
-    //TODO tester
     public static String getExtension(File file) {
         String fileName = file.getName();
         int index = fileName.lastIndexOf(".");
+        if (index == -1){
+            return null;
+        }
         return fileName.substring(index + 1, fileName.length());
     }
 
     private static void close(InputStream iStream, OutputStream oStream)
-          throws IOException {
+            throws IOException {
         try {
             if (iStream != null) {
                 iStream.close();
             }
-        }
-        finally {
+        } finally {
             if (oStream != null) {
                 oStream.close();
             }

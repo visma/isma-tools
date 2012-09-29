@@ -1,6 +1,7 @@
 package org.isma.tools.subtitles.format;
 
-import org.isma.utils.io.FileUtils;
+
+import org.isma.tools.utils.io.FileHelper;
 
 import java.io.File;
 
@@ -26,7 +27,7 @@ public class SubtitlesFormatFactory {
     }
 
     public SubtitlesFormat getFormat(File file) throws UnsupportedSubtitlesFormat {
-        String extension = FileUtils.getExtension(file).toLowerCase();
+        String extension = FileHelper.getExtension(file).toLowerCase();
         for (FormatEnum formatEnum : FormatEnum.values()) {
             if (formatEnum.getExtension().equals(extension)) {
                 return formatEnum.getFormat();

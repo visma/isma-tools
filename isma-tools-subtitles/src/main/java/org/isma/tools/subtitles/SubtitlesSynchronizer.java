@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.isma.tools.subtitles.format.SubtitlesFormat;
 import org.isma.tools.subtitles.format.SubtitlesFormatFactory;
 import org.isma.tools.subtitles.format.UnsupportedSubtitlesFormat;
+import org.isma.tools.utils.io.FileHelper;
 import org.joda.time.Duration;
 
 import java.io.File;
@@ -11,11 +12,10 @@ import java.io.IOException;
 
 import static java.lang.System.getProperty;
 import static org.apache.commons.io.FileUtils.writeStringToFile;
-import static org.isma.utils.io.FileUtils.getExtension;
 
 public class SubtitlesSynchronizer {
     public static final String LINE_SEPARATOR = getProperty("line.separator");
-//    public static final String ENCODING = "UTF-8";
+    //    public static final String ENCODING = "UTF-8";
     public static final String ENCODING = "windows-1252";
     private final SubtitlesFormatFactory formatFactory = new SubtitlesFormatFactory();
 
@@ -48,7 +48,7 @@ public class SubtitlesSynchronizer {
 
 
     private File createEmptyOuputFile(File subtitlesFile) {
-        String extension = getExtension(subtitlesFile);
+        String extension = FileHelper.getExtension(subtitlesFile);
         String fileName = subtitlesFile.getName();
         int lastIndexOfExtension = fileName.lastIndexOf(extension);
         String outputFileName = fileName.substring(0, lastIndexOfExtension - 1) + "[Resync by org.isma]." + extension;
