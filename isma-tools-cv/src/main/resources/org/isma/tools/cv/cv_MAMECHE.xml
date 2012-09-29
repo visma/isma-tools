@@ -93,7 +93,11 @@
                         </texte>
                     </projet>
                     <projet nom="Oscar">
-                        <texte>Application d'administration des données du Datawarehouse</texte>
+                        <texte>
+                            <![CDATA[
+                            Application d'administration des données du Datawarehouse
+                            ]]>
+                        </texte>
                     </projet>
                 </projets>
                 <intervention>
@@ -104,9 +108,6 @@
                             <li>conception/développement JAVA (2 ou 3 tiers), architecture client de type MVC</li>
                             <li>l'écriture du mapping objet/relationnel en XML</li>
                             <li>l'écriture des requêtes et procédures stoquées SQL</li>
-                        </ul>
-                        <p>Mes interventions en assistance à maîtrise d'ouvrage couvrent :</p>
-                        <ul class="interventionList">
                             <li>la définition et l'écriture des données fournies en entrée aux tests automatisés</li>
                             <li>la définition et l'écriture des étalons de tests (résultats attendus)</li>
                             <li>l'estimation de la charge de travail des différentes tâches</li>
