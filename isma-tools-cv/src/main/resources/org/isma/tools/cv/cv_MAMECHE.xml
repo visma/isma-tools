@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="cv.xsd" cvweight="heavy">
-    <candidat prenom="Ismaël" nom="MAMECHE" age="31" statutMarital="Célibataire" nationalite="française">
+    <candidat prenom="Ismaël" nom="MAMECHE" age="32" statutMarital="Célibataire" nationalite="française">
         <contact mail="ismael.mameche@gmail.com" tel="06 76 40 15 17"/>
         <adresse rue="14 avenue joffre" cp="94160" ville="Saint mandé"/>
         <profil titre="Développeur Java senior"
@@ -20,7 +20,7 @@
                     <detail>Spring</detail>
                     <detail>Struts</detail>
                     <detail>Hibernate</detail>
-                    <detail>XFire</detail>
+                    <detail>REST/JSON</detail>
                     <detail>Apache Commons</detail>
                     <detail>Pico</detail>
                     <detail>Mockito</detail>
@@ -28,7 +28,7 @@
                     <detail>JUnit</detail>
                 </competence>
                 <competence intitule="Expérimenté dans l'utilisation d'une forge logicielle">
-                    <detail>Intégration continue (Bamboo, Hudson)</detail>
+                    <detail>Intégration continue (Bamboo, Hudson/Jenkins)</detail>
                     <detail>Maven</detail>
                     <detail>Test coverage (Cobertura)</detail>
                 </competence>
@@ -39,8 +39,8 @@
                     <detail>XML</detail>
                     <detail>XSD</detail>
                     <detail>JQuery</detail>
-                    <detail>Backbone.</detail>
-                    <detail>Websockets</detail>
+                    <!--<detail>Backbone.</detail>-->
+                    <!--<detail>Websockets</detail>-->
                 </competence>
                 <competence intitule="Expérimenté en bases de données relationnelles">
                     <detail>MySQL</detail>
@@ -53,7 +53,7 @@
                     <detail>Test Driven Developpement</detail>
                     <detail>
                         <![CDATA[
-                        eXtreme Programming (Itérations courtes, intégration continue, travail en binôme, plannification et estimation de charge des tâches)
+                        Scrum, eXtreme Programming (Itérations courtes, intégration continue, travail en binôme, plannification et estimation de charge des tâches)
                         ]]>
                     </detail>
                 </competence>
@@ -67,6 +67,75 @@
     </formations>
     <experiences>
         <pageExperience>
+            <!-- PMU -->
+            <experience>
+                <client nom="PMU" fonction="Jeux en ligne" equipe="D2I (WebServices)"/>
+                <mission poste="Ingénieur étude et développement" duree="3 mois" dateDebut="octobre 2012"
+                         dateFin="decembre 2012" type="Forfait" effectifs="20">
+                    <texte>
+                        <![CDATA[
+                    L'équipe PMU Connect services est en charge de la refonte du site internet du PMU.
+                    Le site internet couvre la gestion du compte utilisateur, ainsi que la prise de pari hippique, sportive et le poker.
+                    Le rôle de l'équipe services consiste a créer l'ensemble des webservices dont a besoin l'équipe Front.
+                    ]]>
+                    </texte>
+                </mission>
+                <projets>
+                    <projet nom="PMU Connect">
+                        <texte>
+                            <![CDATA[
+                        <p>La nouvelle monture du site internet PMU Connect couvre :</p>
+                        <ul class="projectlist">
+                            <li>la gestion de compte utilisateur (autolimitations...)</li>
+                            <li>la prise de pari hippique et sportive</li>
+                            <li>la restitution des informations hippiques des fournisseurs de données (equidia, geny...)</li>
+                            <li>le poker en ligne</li>
+                        </ul>
+                        ]]>
+                        </texte>
+                    </projet>
+                </projets>
+                <intervention>
+                    <texte>
+                        <![CDATA[
+                        Mes interventions sur site ou en télétravail couvrent :
+                        <ul class="interventionList">
+                            <li>Chiffrages (sprint planning)</li>
+                            <li>Analyse</li>
+                            <li>Validation de l'api JSON des services auprès du Front</li>
+                            <li>Tests unitaires (TDD, BDD...)</li>
+                            <li>Conception/Développement des services</li>
+                            <li>Rédaction des tests d'acceptance</li>
+                            <li>Démonstration (sprint demo)</li>
+                        </ul>
+                        ]]>
+                    </texte>
+                </intervention>
+                <environnement>
+                    <liste>
+                        <element>Méthodologie Scrum (daily scrum, sprint planning, sprint demo, retrospective...)</element>
+                        <element>Intégration continue (Jenkins, Sonar, Fortify)</element>
+                        <element>Test Driven Developpement</element>
+                        <element>Tomcat</element>
+                        <element>Java 7</element>
+                        <element>Maven 3</element>
+                        <element>Rest/JSON</element>
+                        <element>Spring 3 (ioc, security, aop)</element>
+                        <element>Hibernate 3</element>
+                        <element>JMS</element>
+                        <element>Mockito</element>
+                        <element>JBehave</element>
+                        <element>JMeter</element>
+                        <element>Intellij</element>
+                        <element>memcached</element>
+                        <element>Mysql</element>
+                        <element>Jira/Confluence</element>
+                        <!--<element>SVN</element>-->
+                        <element>MacOs X</element>
+                        <element>Skype</element>
+                    </liste>
+                </environnement>
+            </experience>
             <!-- ALLIANZ -->
             <experience>
                 <client nom="Allianz Global Investors" fonction="Asset Manager" equipe="Front Office"/>
@@ -136,6 +205,8 @@
                     </liste>
                 </environnement>
             </experience>
+        </pageExperience>
+        <pageExperience>
             <!-- GENERALI -->
             <experience>
                 <client nom="Generali" fonction="Assureur"/>
@@ -181,6 +252,7 @@
                         <element>Spring 2</element>
                         <element>JUnit</element>
                         <element>Webservices Xfire</element>
+                        <element>Html/Css/Javascript</element>
                         <element>Maven 2</element>
                         <element>Websphere</element>
                         <element>JBoss</element>
@@ -193,10 +265,8 @@
                 </environnement>
             </experience>
             <!-- ORANGE BUSINESS SERVICE -->
-        </pageExperience>
-        <pageExperience>
             <experience>
-                <client nom="Orange business service" fonction="Telecoms"/>
+                <client nom="Orange Business Services" fonction="Telecoms"/>
                 <mission poste="Ingénieur étude et développement" duree="2 ans" dateDebut="Février 2005"
                          dateFin="Avril 2007" type="Forfait" effectifs="10"/>
                 <projets>
