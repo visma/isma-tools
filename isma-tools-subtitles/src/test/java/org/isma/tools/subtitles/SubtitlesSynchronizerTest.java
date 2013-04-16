@@ -17,7 +17,6 @@ public class SubtitlesSynchronizerTest extends AbstractFileTestCase {
 
     @Test
     public void testWin1252Format() throws Exception {
-
         File expectedFile = copyFile("subtitles", "win1252_format_00min15sec.srt");
         File unSynchroFile = copyFile("subtitles", "win1252_format_00min05sec.srt");
 
